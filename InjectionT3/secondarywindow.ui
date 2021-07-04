@@ -1,0 +1,2692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SecondaryWindow</class>
+ <widget class="QDialog" name="SecondaryWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>831</width>
+    <height>513</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>831</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>9</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>621</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 24px;
+font-weight: bold;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Software Fault - Freeze GPS Values&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_6">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>190</y>
+       <width>251</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QLabel" name="label_14">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Start injection at (s):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_startInjection_3">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to start injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <widget class="QLabel" name="label_17">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;End injection at (s): &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_endInjection_3">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to end injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionContinue_2">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Accept</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionCancel_5">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>621</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 24px;
+font-weight: bold;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Software Fault - Fixed GPS Values&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionContinue">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Accept</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>120</y>
+       <width>121</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_9">
+      <item>
+       <widget class="QLabel" name="labelGPSLatInjection_3">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Latitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelGPSLonInjection_3">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Longitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelGPSAltInjection_3">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Altitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>290</y>
+       <width>216</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="label_13">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Start injection at (s):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_startInjection_2">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to start injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QLabel" name="label_16">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;End injection at (s): &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_endInjection_2">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to end injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSAltInjection_5">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>220</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">qproperty-toolTip: &quot;GPS Altitude value to inject.&quot;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLonInjection_5">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>170</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">qproperty-toolTip: &quot;GPS Longitude value to inject.&lt;br&gt;A valid boundary is considered as [-180, 180].&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLatInjection_5">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>120</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">qproperty-toolTip: &quot;GPS Latitude value to inject.&lt;br&gt; A valid boundary is considered as [-90,90].&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionCancel">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>621</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 24px;
+font-weight: bold;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Software Fault - Delay GPS Values&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_7">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>210</y>
+       <width>251</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLabel" name="label_15">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Start injection at (s):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_startInjection_4">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to start injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <item>
+         <widget class="QLabel" name="label_18">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;End injection at (s): &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_endInjection_4">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to end injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionContinue_3">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Accept</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionCancel_2">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>170</y>
+       <width>131</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_26">
+        <property name="styleSheet">
+         <string notr="true">font-size: 14px;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Delay (s):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_delayvalue">
+        <property name="styleSheet">
+         <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to start injection&quot;;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_4">
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>621</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 24px;
+font-weight: bold;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Software Fault - Random GPS Values&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_8">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>300</y>
+       <width>251</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <widget class="QLabel" name="label_19">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Start injection at (s):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_startInjection_5">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to start injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <item>
+         <widget class="QLabel" name="label_20">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;End injection at (s): &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_endInjection_5">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to end injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_9">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>140</y>
+       <width>121</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_10">
+      <item>
+       <widget class="QLabel" name="labelGPSLatInjection_4">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Latitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelGPSLonInjection_4">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Longitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelGPSAltInjection_4">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Altitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionContinue_4">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Accept</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_10">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>100</y>
+       <width>371</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_22">
+        <property name="styleSheet">
+         <string notr="true">font-size: 12px;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Min Random Value&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_23">
+        <property name="styleSheet">
+         <string notr="true">font-size: 12px;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Max Random Value&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLonInjection_6">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>190</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+qproperty-toolTip:&quot;Assign value to random interval max &lt;br&gt;bound for GPS Longitude.&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLatInjection_6">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>140</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+qproperty-toolTip:&quot;Assign value to random interval max &lt;br&gt;bound for GPS Latitude.&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLonInjection_7">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>190</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+qproperty-toolTip:&quot;Assign value to random interval min &lt;br&gt;bound for GPS Longitude.&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSAltInjection_6">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>240</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+qproperty-toolTip:&quot;Assign value to random interval max &lt;br&gt;bound for GPS Altitude&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLatInjection_3">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>140</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+qproperty-toolTip:&quot;Assign value to random interval min &lt;br&gt;bound for GPS Latitude.&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSAltInjection_3">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>240</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+qproperty-toolTip:&quot;Assign value to random interval min &lt;br&gt;bound for GPS Altitude.&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionCancel_3">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_5">
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>621</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 24px;
+font-weight: bold;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Software Fault - Min|Max GPS Values&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionContinue_5">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Accept</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_11">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>300</y>
+       <width>251</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_15">
+        <item>
+         <widget class="QLabel" name="label_21">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Start injection at (s):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_startInjection_6">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to start injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_16">
+        <item>
+         <widget class="QLabel" name="label_24">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;End injection at (s): &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_endInjection_6">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to end injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_12">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>140</y>
+       <width>121</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_11">
+      <item>
+       <widget class="QLabel" name="labelGPSLatInjection_5">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Latitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelGPSLonInjection_5">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Longitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelGPSAltInjection_5">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Altitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QCheckBox" name="checkboxGPSAltInjection_2">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>250</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox::Indicator {width: 30px; height: 30px; image: url(:/Logos/images/unchecked_checkbox.png);} 
+QCheckBox::indicator::checked{width: 30px; height: 30px; image: url(:/Logos/images/checked_checkbox.png);}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkboxGPSLatInjection_2">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>150</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox::Indicator{width: 30px; height: 30px; image: url(:/Logos/images/unchecked_checkbox.png);} 
+QCheckBox::indicator::checked{width: 30px; height: 30px; image: url(:/Logos/images/checked_checkbox.png);}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkboxGPSLonInjection_2">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>200</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox::Indicator {width: 30px; height: 30px; image: url(:/Logos/images/unchecked_checkbox.png);} 
+QCheckBox::indicator::checked{width: 30px; height: 30px; image: url(:/Logos/images/checked_checkbox.png);}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>100</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">qproperty-toolTip:&quot;Choose whether to consider GPS Latitude, &lt;br&gt;Longitude or Altitude for Min|Max injection&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Assign Values</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionCancel_4">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_6">
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>621</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 24px;
+font-weight: bold;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Security Attack - Random Longitude&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_22">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>120</y>
+       <width>371</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_27">
+      <item>
+       <widget class="QLabel" name="label_42">
+        <property name="styleSheet">
+         <string notr="true">font-size: 12px;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Min Random Value&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_43">
+        <property name="styleSheet">
+         <string notr="true">font-size: 12px;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Max Random Value&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="labelGPSLonInjection_9">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>170</y>
+       <width>119</width>
+       <height>43</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Longitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_23">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>270</y>
+       <width>251</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_18">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_28">
+        <item>
+         <widget class="QLabel" name="label_44">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Start injection at (s):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_startInjection_12">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to start injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_29">
+        <item>
+         <widget class="QLabel" name="label_45">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;End injection at (s): &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_endInjection_12">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to end injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionCancel_11">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>380</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionContinue_11">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>380</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Accept</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLonInjection_12">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>170</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+qproperty-toolTip:&quot;Assign value to random interval min &lt;br&gt;bound for GPS Longitude.&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLonInjection_13">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>170</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+qproperty-toolTip:&quot;Assign value to random interval max &lt;br&gt;bound for GPS Longitude.&quot;;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_7">
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>621</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 24px;
+font-weight: bold;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Security Attack - Random Latitude&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_20">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>120</y>
+       <width>371</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="label_38">
+        <property name="styleSheet">
+         <string notr="true">font-size: 12px;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Min Random Value&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_39">
+        <property name="styleSheet">
+         <string notr="true">font-size: 12px;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Max Random Value&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="labelGPSLatInjection_9">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>170</y>
+       <width>119</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Latitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLatInjection_10">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>170</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+qproperty-toolTip:&quot;Assign value to random interval min &lt;br&gt;bound for GPS Latitude.&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLatInjection_11">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>170</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+qproperty-toolTip:&quot;Assign value to random interval max &lt;br&gt;bound for GPS Latitude.&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_21">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>270</y>
+       <width>251</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_17">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_25">
+        <item>
+         <widget class="QLabel" name="label_40">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Start injection at (s):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_startInjection_11">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to start injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_26">
+        <item>
+         <widget class="QLabel" name="label_41">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;End injection at (s): &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_endInjection_11">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to end injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionCancel_10">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>380</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionContinue_10">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>380</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Accept</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_8">
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>621</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 24px;
+font-weight: bold;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Security Attack - Random Position&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_16">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>100</y>
+       <width>371</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label_31">
+        <property name="styleSheet">
+         <string notr="true">font-size: 12px;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Min Random Value&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_32">
+        <property name="styleSheet">
+         <string notr="true">font-size: 12px;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Max Random Value&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLatInjection_4">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>140</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+qproperty-toolTip:&quot;Assign value to random interval min &lt;br&gt;bound for GPS Latitude.&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLatInjection_9">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>140</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+qproperty-toolTip:&quot;Assign value to random interval max &lt;br&gt;bound for GPS Latitude.&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionContinue_8">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Accept</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLonInjection_10">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>190</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+qproperty-toolTip:&quot;Assign value to random interval max &lt;br&gt;bound for GPS Longitude.&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLonInjection_11">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>190</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+qproperty-toolTip:&quot;Assign value to random interval min &lt;br&gt;bound for GPS Longitude.&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_17">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>140</y>
+       <width>121</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_14">
+      <item>
+       <widget class="QLabel" name="labelGPSLatInjection_8">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Latitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelGPSLonInjection_8">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Longitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelGPSAltInjection_8">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Altitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionCancel_8">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_18">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>300</y>
+       <width>251</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_15">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_21">
+        <item>
+         <widget class="QLabel" name="label_33">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Start injection at (s):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_startInjection_9">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to start injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_22">
+        <item>
+         <widget class="QLabel" name="label_34">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;End injection at (s): &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_endInjection_9">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to end injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSAltInjection_9">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>240</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+qproperty-toolTip:&quot;Assign value to random interval max &lt;br&gt;bound for GPS Altitude&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSAltInjection_4">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>240</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+qproperty-toolTip:&quot;Assign value to random interval min &lt;br&gt;bound for GPS Altitude.&quot;;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_9">
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>621</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 24px;
+font-weight: bold;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Security Attack - GPS Delay&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>160</y>
+       <width>131</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_35">
+        <property name="styleSheet">
+         <string notr="true">font-size: 14px;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Delay (s):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_delayvalue_2">
+        <property name="styleSheet">
+         <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to start injection&quot;;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionContinue_9">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>380</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Accept</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_19">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>200</y>
+       <width>251</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_16">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_23">
+        <item>
+         <widget class="QLabel" name="label_36">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Start injection at (s):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_startInjection_10">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to start injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_24">
+        <item>
+         <widget class="QLabel" name="label_37">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;End injection at (s): &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_endInjection_10">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to end injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionCancel_9">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>380</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_10">
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>621</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 24px;
+font-weight: bold;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Security Attack - Force UAV Landing&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_24">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>290</y>
+       <width>216</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_19">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_30">
+        <item>
+         <widget class="QLabel" name="label_46">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Start injection at (s):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_startInjection_13">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to start injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_31">
+        <item>
+         <widget class="QLabel" name="label_47">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;End injection at (s): &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_endInjection_13">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to end injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="labelGPSAltInjection_9">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>170</y>
+       <width>119</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Altitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionCancel_12">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionContinue_12">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Accept</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSAltInjection_10">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>170</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">qproperty-toolTip: &quot;GPS Altitude value to inject.&quot;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_11">
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>621</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 24px;
+font-weight: bold;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Security Attack - Hijack with a second UAV&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLonInjection_9">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>170</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">qproperty-toolTip: &quot;GPS Longitude value to inject.&lt;br&gt;A valid boundary is considered as [-180, 180].&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLatInjection_8">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>120</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">qproperty-toolTip: &quot;GPS Latitude value to inject.&lt;br&gt; A valid boundary is considered as [-90,90].&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_14">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>300</y>
+       <width>216</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_8">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_19">
+        <item>
+         <widget class="QLabel" name="label_29">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Start injection at (s):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_startInjection_8">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to start injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_20">
+        <item>
+         <widget class="QLabel" name="label_30">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;End injection at (s): &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_endInjection_8">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to end injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_15">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>120</y>
+       <width>121</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_13">
+      <item>
+       <widget class="QLabel" name="labelGPSLatInjection_7">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Latitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelGPSLonInjection_7">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Longitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelGPSAltInjection_7">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Altitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionCancel_7">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionContinue_7">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Accept</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSAltInjection_8">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>220</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">qproperty-toolTip: &quot;GPS Altitude value to inject.&quot;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_12">
+    <widget class="QLabel" name="label_25">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>30</y>
+       <width>681</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 24px;
+font-weight: bold;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Security Attack - Hijack with attacker's specified position&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>120</y>
+       <width>121</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_12">
+      <item>
+       <widget class="QLabel" name="labelGPSLatInjection_6">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Latitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelGPSLonInjection_6">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Longitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelGPSAltInjection_6">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;GPS Altitude:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLatInjection_7">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>120</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">qproperty-toolTip: &quot;GPS Latitude value to inject.&lt;br&gt; A valid boundary is considered as [-90,90].&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_13">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>300</y>
+       <width>216</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_17">
+        <item>
+         <widget class="QLabel" name="label_27">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Start injection at (s):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_startInjection_7">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to start injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_18">
+        <item>
+         <widget class="QLabel" name="label_28">
+          <property name="styleSheet">
+           <string notr="true">font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;End injection at (s): &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_endInjection_7">
+          <property name="styleSheet">
+           <string notr="true">qproperty-toolTip: &quot;Seconds after takeoff considered to end injection&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSLonInjection_8">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>170</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">qproperty-toolTip: &quot;GPS Longitude value to inject.&lt;br&gt;A valid boundary is considered as [-180, 180].&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditGPSAltInjection_7">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>220</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">qproperty-toolTip: &quot;GPS Altitude value to inject.&quot;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionCancel_6">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonGPSInjectionContinue_6">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>390</y>
+       <width>321</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Accept</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

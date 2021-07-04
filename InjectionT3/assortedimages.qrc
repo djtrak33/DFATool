@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/Logos">
+        <file>images/PX4_Logo.png</file>
+        <file>images/checked_checkbox.png</file>
+        <file>images/unchecked_checkbox.png</file>
+        <file>images/simple_vector.png</file>
+        <file>images/simple_save.png</file>
+        <file>images/logo-bubbles.png</file>
+        <file>images/ardupilot_logo.png</file>
+        <file>images/rotors_logo.png</file>
+    </qresource>
+    <qresource prefix="/Stylesheets">
+        <file>images/Wstartpage.qss</file>
+        <file>images/Clocker.qss</file>
+        <file>images/Remover.qss</file>
+        <file>images/PicPax.qss</file>
+        <file>images/HackBook.qss</file>
+    </qresource>
+</RCC>
